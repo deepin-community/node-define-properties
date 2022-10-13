@@ -1,0 +1,12 @@
+version=4
+opts=\
+dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-define-properties-$1/ \
+ https://github.com/ljharb/define-properties/tags .*/archive/.*/v?([\d\.]+).tar.gz
+
+opts=\
+dversionmangle=auto,\
+ctype=nodejs,\
+component=object-keys,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-object-keys-$1/ \
+ https://github.com/ljharb/object-keys/tags .*/archive/.*/v?([\d\.]+).tar.gz ignore

@@ -1,0 +1,32 @@
+Source: node-define-properties
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Testsuite: autopkgtest-pkg-nodejs
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends:
+ debhelper-compat (= 13)
+ , nodejs
+ , node-tape
+ , node-lodash-packages
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Homepage: https://github.com/ljharb/define-properties#readme
+Vcs-Git: https://salsa.debian.org/js-team/node-define-properties.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-define-properties
+Rules-Requires-Root: no
+
+Package: node-define-properties
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+ , node-lodash-packages
+Description: Define multiple non-enumerable properties at once
+ Uses Object.defineProperty when available; falls back to standard assignment
+ in older engines.
+ .
+ Existing properties are not overridden. Accepts a map of property names to a
+ predicate that, when true, force-overrides.
+ .
+ Node.js is an event-based server-side JavaScript engine.

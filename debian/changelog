@@ -1,0 +1,45 @@
+node-define-properties (1.1.3-3) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper from old 12 to 13.
+  * Update standards version to 4.6.0, no changes needed.
+  * Add "Rules-Requires-Root: no"
+  * Add ctype=nodejs to component(s)
+  * Fix d/watch:
+    * Fix filenamemangle
+    * Fix GitHub tags regex
+    * Use /tags instead of /releases
+  * Use dh-sequence-nodejs instead of pkg-js-tools
+
+ -- Yadd <yadd@debian.org>  Mon, 01 Nov 2021 11:52:16 +0100
+
+node-define-properties (1.1.3-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.5.0, no changes needed.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 29 Aug 2021 01:16:54 +0100
+
+node-define-properties (1.1.3-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Add upstream/metadata
+  * Prepare embedding of object-keys
+  * New upstream version 1.1.3
+  * Switch test and install to pkg-js-tools
+  * Remove patch
+  * Update debian/copyright
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 06 Aug 2019 22:56:11 +0200
+
+node-define-properties (1.1.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #887363)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 29 May 2019 15:50:30 +0530
