@@ -2,18 +2,24 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: define-properties
 Upstream-Contact: https://github.com/ljharb/define-properties/issues
 Source: https://github.com/ljharb/define-properties#readme
+ https://registry.npmjs.org/@types/define-properties
+ https://github.com/ljharb/define-data-property/tags
 
 Files: *
 Copyright: 2015, Jordan Harband
 License: Expat
 
-Files: object-keys/*
-Copyright: 2013, Jordan Harband
-License: Expat
-
 Files: debian/*
 Copyright: 2018, Pirate Praveen <praveen@debian.org>
  2019, Yadd <yadd@debian.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
+License: Expat
+
+Files: define-data-property/*
+Copyright: 2023, Jordan Harband
 License: Expat
 
 License: Expat

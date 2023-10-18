@@ -2,11 +2,14 @@ version=4
 opts=\
 dversionmangle=s/\+(debian|dfsg|ds|deb)(\.\d+)?$//,\
 filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-define-properties-$1/ \
- https://github.com/ljharb/define-properties/tags .*/archive/.*/v?([\d\.]+).tar.gz
+ https://github.com/ljharb/define-properties/tags .*/archive/.*/v?([\d\.]+).tar.gz group
+
+opts="searchmode=plain,component=types-define-properties,ctype=nodejs,pgpmode=none,filenamemangle=s/^.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-types-define-properties-$1/" \
+ https://registry.npmjs.org/@types/define-properties https://registry.npmjs.org/@types/define-properties/-/define-properties-([\d\.]+)@ARCHIVE_EXT@ checksum
 
 opts=\
-dversionmangle=auto,\
+component=define-data-property,\
 ctype=nodejs,\
-component=object-keys,\
-filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-object-keys-$1/ \
- https://github.com/ljharb/object-keys/tags .*/archive/.*/v?([\d\.]+).tar.gz ignore
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-define-data-property-$1/ \
+ https://github.com/ljharb/define-data-property/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
